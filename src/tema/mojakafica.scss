@@ -1,0 +1,420 @@
+@import 'varijable.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    margin: 0;
+}
+
+#mojakafica {
+    width: 100%;
+    position: relative;
+    .PocetnaPozadina {
+        display: block;
+        background: url('/res/home.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        background-position-y: 70%;
+        height: 600px;
+        width: 100%;
+        max-width: 1920px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 14px solid $zlatna;
+        z-index: -1;
+    }
+    .meni-wrapper {
+        background-color: $crvena;
+        height: 96px;
+    .meni {
+        display: grid;
+        z-index: 5;
+        width: 720px;
+        margin: auto;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 10px;
+        padding-top: 40px;
+        .meni-item {
+            vertical-align: middle;
+            text-align: center;  
+            a {
+                text-align: center;      
+                color: white;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 13;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            svg {
+                fill: white;
+                width: 65px;
+                margin-top: -20px;
+
+            }
+          }
+        
+        
+
+    }}
+    .meni-wrapper.pocetna {
+        background-color: transparent;
+        height: auto;
+        .meni {
+            .meni-item {
+                svg {
+                    width: 143px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+    .ProizvodiSlika {
+        display: block;
+        width: 60%;
+        margin: auto;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+    .kontakt-wrapper {
+        width: 100%;
+        background-color: $crvena;
+        padding: 40px;
+        .kontakt {
+            display: block;
+            width: 50%;
+            margin: auto;
+            .Logo {
+                width: 168px;
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 20px;
+                &:nth-child(1) {
+                    fill: white;
+                }
+            }
+            .kontaktInfo {
+                text-align: center;
+                p {
+                    margin-top: 25px;
+                    margin-bottom: 5px;
+                    font-size: 13px;
+                    color: white;
+                    font-weight: bold;
+                }
+                a {
+                    color: white;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .copyright-wrapper {
+        width: 100%;
+        background-color: $crna;
+        padding: 20px;
+        .copyright {
+            display: block;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            font-size: 9px;
+            color: white;
+        }
+    }
+    .SocialIcons {
+        z-index: 99999;
+        position: fixed ;
+        top: 40%;
+        right: 10%;
+        a { 
+            display: block ;
+            margin: 5px;
+        svg {
+            width: 36px; 
+            fill: $crna;
+            display: block;
+            
+        
+        }
+        &:hover {
+            
+            border-radius: 100px;
+            width: 36px;
+            height: 36px;
+            background: white;
+            cursor: pointer;
+            svg{
+                fill:$crvena;
+            }
+        }
+        }
+    }
+    .SocialIcons.pocetna {
+        a {
+            svg {fill:white}
+            &:hover {background: transparent;svg{fill: $crna}}
+        }
+    }
+    .Proizvodi {
+        width: 720px;
+        margin: auto;
+        margin-bottom: 30px;
+        h2 {
+            font-size: 22px;
+            color: $crvena;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        p {
+            width: 370px;
+            font-size: 13px;
+            margin: auto;
+            text-justify: auto;
+        }
+        .Kategorije {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-gap: 100px;
+                a {
+                    text-decoration: none;
+                    img {
+                        width: 290px;
+                        height: 290px;
+                    }
+                    p {
+                        padding: 10px;
+                        width: 90%;
+                        margin: auto;
+                        border-top: 0.5px solid $siva;
+                        width: auto;
+                        text-align: center;
+                        color: $crna;
+                        
+                    }
+                    &:hover {
+                        p {
+                            font-weight: bold;
+                            color: $crvena;
+                        }
+                    }
+                    
+                }
+
+        }
+        .Proizvod {
+            margin: auto;
+            position: relative;
+            display: grid;
+            grid-template-columns: 254px auto;
+            grid-gap: 0px;
+            border-bottom: 0.5px solid $siva;
+            .sadrzaj {
+                position: relative;
+                padding-top: 70px;
+                p {
+                    margin: 0;
+                    width: auto;
+                }
+                p.kategorija {
+                    color: $siva;
+                    font-size: 12px;
+                }
+                p.naziv {
+                    color: $crvena;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+                p.tekst {
+                    font-size: 13px;
+                    margin-bottom: 20px;
+                }
+                p.dostupnost {
+                    color: $siva;
+                    font-size: 12px;
+                }
+                p.pakovanje {
+                    color: $crvena;
+                    font-size: 17px;
+                }
+                .original {
+                    position: absolute;
+                    bottom: 71px;
+                    right: 71px;
+                    svg {
+                        fill: $crvena;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+    .Onama {
+        .uvodSlika {
+            width: 100%;
+            height: 224px;
+            background-image: url('/res/onamauvod.jpg');
+            background-size: cover;
+        }
+        .uvod {
+            width: 720px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            .uvodNaslov {
+                display: grid;
+                grid-template-columns: 130px auto;
+                svg {
+                    fill:$crvena;
+                }
+                p {
+                    padding-left: 20px;
+                    font-size: 26px;
+                    font-weight: 100;
+                    .naglaseno {
+                        color: $crvena;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .uvodTekst {
+                font-size: 13px;
+                margin-bottom: 50px;
+            }
+        }
+        .brendSekcija {
+            position: relative;
+            width: 100%;
+            height: 133px;
+            background: $crvena;
+            margin-bottom: 70px;
+            .brendSadrzaj {
+                position: relative;
+                width: 720px;
+                margin: auto;
+                padding-top: 20px;
+                svg {
+                    width: 85px;
+                    display: inline-block;
+                    margin-right: 20px;
+                    vertical-align: middle;
+                }
+                p {
+                    display: inline-block;
+                    color: white;
+                    font-size: 22px;
+                    vertical-align: middle;
+                }
+                img {
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                    top: -100px;
+                }
+            }
+        }
+        .Slike {
+            width: 720px;
+            margin: auto;
+            margin-bottom: 40px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+        }
+    }
+    .Kontakt {
+        .KontaktInfo {
+            width: 720px;
+            margin: auto;
+            h2 {
+                font-weight: bold;
+                color: $crvena;
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+            .Informacije {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                margin-bottom: 57px;
+                .InfoItem {
+                    text-align: center;
+                    p {font-size: 16px;}
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                            color: $crvena;
+                            text-decoration: underline;
+                        }
+                    }
+                    svg {
+                        width: 56px;
+                        fill: $crvena;
+                    }
+                }
+            }
+            .Forma {
+                .InputPolja {
+                display: grid;
+                grid-template-areas: 
+                'tema tema tema email email email'
+                'ime ime ime telefon telefon telefon'
+                'poruka poruka poruka poruka poruka poruka';
+                grid-gap: 16px;
+                
+                input[type=text] {
+                    height: 42px;
+                    padding-left: 20px;
+                    &:focus {
+                       outline: $crvena auto 1px;
+                    }
+                }
+                textarea {
+                    padding: 20px;
+                    &:focus {
+                        outline: $crvena auto 1px;
+                     }
+                }
+            }
+            button {
+                display: block;
+                width: 100px;
+                height: 42px;
+                margin: auto;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                background: transparent;
+                border: 2px solid $crvena;
+                font-size: 16px;
+                &:hover {
+                    background: $crvena;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+            p.err { text-align: center; color:$crvena; font-weight: bold;}
+            p.good { text-align: center; color:green; font-weight: bold;}
+            }
+        }
+    }
+}
+@import 'mobile.scss';

@@ -1,0 +1,120 @@
+@media screen and (max-width: 550px) {
+    #mojakafica {
+        .PocetnaPozadina {
+            height: 400px;
+        }
+        .meni-wrapper {
+            .meni {
+                width: 100%;
+                .meni-item {
+                    a {font-size: 8px;}
+                    svg {width: 60px;margin-top: -10px;}
+                }
+            }
+
+        }
+        .meni-wrapper.pocetna {
+            .meni {
+                .meni-item {
+                    svg {width: 60px; margin-top: -10px;}
+                }
+            }
+        }
+        .ProizvodiSlika {
+            margin-top: 130px;
+            width: 95%;
+            img {width: 100%;}
+        }
+        .kontakt-wrapper {
+            .kontakt {
+                width: 100%;
+                .Logo {
+                    width: 100px;
+                    grid-gap: 5px;
+                    svg {width: 47px;}
+                }
+            }
+        }
+        .SocialIcons {
+            right: 3%;
+        }
+        .Proizvodi {
+            width: 90%;
+            p { width: 80%;}
+            .Kategorije {
+                display: block;
+                a {
+                    img {
+                        display: block;
+                        margin:auto;
+                    }
+                }
+            }
+            .Proizvod {
+                display: block;
+                padding-bottom: 30px;
+                img {
+                    display: block;
+                    margin: auto;
+                }
+                .sadrzaj {
+                    padding-top: 10px;
+                    .original {
+                        bottom: 10px;
+                        right: 10px;
+                        svg {
+                            width: 50px;
+                        }
+                    }
+
+                }
+            }
+        }
+        .Onama {
+            .uvodSlika {
+                height: 124px;
+                background-position: center;
+            }
+            .uvod {
+                width: 90%;
+                .uvodNaslov {
+                    grid-template-columns: 130px auto;
+                    svg { width: 100%;}
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .brendSekcija {
+                padding: 5px;
+                .brendSadrzaj {
+                    width: 100%;
+                    svg {width: 45px;}
+                    p {
+                        font-size: 13px;
+                    }
+                    img {
+                        width: 180px;
+                        top: -50px;
+                    }
+                }
+            }
+            .Slike {
+                width: 90%;
+               
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .Kontakt {
+            .KontaktInfo {
+                width: 95%;
+                .Informacije {
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
